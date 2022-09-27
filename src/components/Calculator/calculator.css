@@ -1,0 +1,146 @@
+.calc {
+    width: 22.56rem;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbarContainer > p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.themeFlex {
+    display: flex;
+    align-items: center;
+}
+
+.themeFlex > p {
+    margin-right: 1.65rem;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.themeFlex > div > div:not(.toggleDiv) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.toggleDiv {
+    width: 60px;
+    height: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.toggleDiv > div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: hsl(6, 63%, 50%);
+}
+
+/* screen */
+.screen {
+    margin-top: 1rem;
+}
+
+.screen > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 6px;
+    color: white;
+    text-align: right;
+    padding: 1.3rem 1rem;
+    font-size: 31.5px;
+    font-weight: 600;
+}
+
+/* Keys */
+
+.keysContainer {
+    padding: 1.1rem;
+    margin-top: 0.9rem;
+    background-color: hsl(223, 31%, 20%);
+}
+
+.keysGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.1rem;
+}
+
+.keysGroup > div {
+    width: 4.3rem;
+    height: 2.5rem;
+    background-color: hsl(30, 25%, 89%);
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: hsl(28, 16%, 65%) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+.keysGroup > .del {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    font-size: 17px;
+    box-shadow: hsl(224, 28%, 35%) 0px 2px 8px 0px;
+}
+
+.lastKeyGroup {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.lastKeyGroup > div {
+    width: 9.7rem;
+    height: 2.5rem;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.lastKeyGroup > .reset {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%) 0px 2px 8px 0px;
+}
+
+.lastKeyGroup > .equal {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: hsl(6, 70%, 34%) 0px 2px 8px 0px;
+}
+
+@media screen and (max-width: 400px) {
+    .calc {
+        width: 320px;
+    }
+
+    .keysGroup > div {
+        width: 3.9rem;
+    }
+
+    .lastKeyGroup > div {
+        width: 8.5rem;
+    }
+}
